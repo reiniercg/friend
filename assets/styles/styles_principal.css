@@ -118,7 +118,7 @@ header {
 
 /*sección inicio*/
 .container_inicio {
-    background: linear-gradient(135deg, #ff914d, #fc6767); /* Fondo degradado moderno */
+    background: linear-gradient(135deg, rgba(255, 145, 77, 0.5), rgba(252, 103, 103, 0.5)); /* Fondo degradado moderno */
     padding: 2rem; /* Espaciado más adaptado a pantallas pequeñas */
     text-align: center;
     border-radius: 15px; /* Bordes redondeados para estilo suave */
@@ -176,7 +176,7 @@ header {
     height: 80vh;
     background: #f5f5f5 url("../images/friends.png")/*no-repeat center center fixed*/;
     background-size: cover;
-    animation: zoomEffect 10s ease-in-out infinite; /* Animación continua */
+    animation: zoomEffect 10s ease-in-out normal; /* Animación continua */
     position: relative;
     overflow: hidden;
 }
@@ -190,7 +190,7 @@ header {
         background-size: 100%;
     }
     100% {
-        background-size: 110%;
+        background-size: 100%;
     }
 }
 
