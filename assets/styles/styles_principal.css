@@ -181,13 +181,13 @@ header {
     overflow: hidden;
 }
 .d1{
-    background-image: url("/assets/images/002-soporte-telefonico.png");
+    background-image: url("assets/images/002-soporte-telefonico.png");
 }
 .d2{
-    background-image: url("/assets/images/001-reloj-de-pared.png");
+    background-image: url("./assets/images/001-reloj-de-pared.png");
 }
 .d3{
-    background-image: url("/assets/images/003-dinero.png");
+    background-image: url("../assets/images/003-dinero.png");
 }
 
 @keyframes zoomEffect {
