@@ -59,7 +59,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./assets/images/baso.jpg');
+    background-image: url("../images/baso.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -133,7 +133,7 @@ h5 {
     justify-content: center;
     flex-direction: column;
     
-    background-image: url('./assets/images/galeria/playa.jpg');
+    background-image: url("../images/galeria/playa.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 70vh;
