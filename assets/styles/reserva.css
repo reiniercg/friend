@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #25d366; /* Verde de WhatsApp */
+    --secondary-color: #128c7e; /* Verde oscuro para hover */
+    --background-color: #f9f9f9; /* Fondo claro */
+    --text-color: #333; /* Color del texto */
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Contenedor del formulario */
+.form-reserva {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.form-reserva h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Estilos para los inputs y textarea */
+.form-reserva label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: var(--text-color);
+}
+
+.form-reserva input,
+.form-reserva textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de reserva */
+.btn-reserva {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsividad */
+@media screen and (max-width: 480px) {
+    .form-reserva {
+        padding: 15px;
+    }
+
+    .form-reserva h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-reserva {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}

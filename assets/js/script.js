@@ -22,3 +22,19 @@ function closeZoom() {
     const overlay = document.getElementById('zoom-overlay');
     overlay.style.display = 'none'; // Oculta el overlay
 }
+//formulario reserva
+
+    document.getElementById("reserva-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const nombre = document.getElementById("nombre").value;
+        const telefono = document.getElementById("telefono").value;
+        const mensaje = document.getElementById("mensaje").value;
+
+        const whatsappURL = `https://wa.me/[+34684792506]?text=${encodeURIComponent(
+            `Nombre: ${nombre}\nTeléfono: ${telefono}\nMensaje: ${mensaje}`
+        )}`;
+        
+        window.open(whatsappURL, "_blank");
+    });
+
+
