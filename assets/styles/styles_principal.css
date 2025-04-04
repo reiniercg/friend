@@ -86,7 +86,7 @@ header {
     width: 48px; /* Ajusta el tamaño del botón */
     height: 48px; /* Asegúrate de que sea consistente con el diseño */
     border: none; /* Quita el borde */
-    background-image: url('./assets/images/menu.png'); /* Cambia la ruta por la ubicación de tu imagen */
+    background-image: url('../images/menu.png'); /* Cambia la ruta por la ubicación de tu imagen */
     background-size: cover; /* Ajusta el fondo para cubrir el botón completo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el botón */
@@ -180,15 +180,7 @@ header {
     position: relative;
     overflow: hidden;
 }
-.d1{
-    background-image: url("assets/images/002-soporte-telefonico.png");
-}
-.d2{
-    background-image: url("./assets/images/001-reloj-de-pared.png");
-}
-.d3{
-    background-image: url("../assets/images/003-dinero.png");
-}
+
 
 @keyframes zoomEffect {
     0% {
