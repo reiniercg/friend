@@ -1,0 +1,235 @@
+.sección_filosofia {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container_filosofía {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgba(252, 250, 250, 0.3);
+    box-sizing: border-box;
+}
+
+/* Columnas individuales */
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 10px;
+    max-width: 20%;
+}
+
+/* Imagen responsiva */
+.img-fluid {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto y encabezados */
+.h3_historia {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+    margin-top: -0.2rem;
+}
+
+h5 {
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0.5rem;
+}
+
+/* Contenedor padre */
+.vaso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/baso.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+
+
+.p1, .p2, .p3, .p4 {
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(243, 228, 98);
+}
+
+.p1, .p3 {
+    font-style: italic;
+}
+
+.p2 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.p3, .p4 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Opiniones */
+.opinion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+    height: 20vh;
+    margin: 0 auto; ;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opinion_1 {
+    flex: 1;
+    text-align: center;
+}
+
+.img_opinion {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.opinion_2 {
+    flex: 2;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #222; /* Mejor contraste */
+}
+
+/* Galería */
+.gallery_padre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-image: url('/assets/images/galeria/playa.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 70vh;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 200px auto;
+    margin-top: 0;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery img.expanded {
+    position: relative; /* Asegura el contexto de apilamiento */
+    transform: scale(2.8);
+    filter: brightness(2.3);
+    z-index: 10;
+}
+
+#zoom-overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#zoom-overlay img {
+    max-width: 90%;
+    max-height: 900%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+    transition: transform 0.3s ease-in-out;
+}
+
+.contenedor_staff {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.staff {
+    margin: 0;
+}
+
+.img_staff {
+    width: 1000px;
+}
+
+/* Contacto */
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    background-color: white;
+    align-items: baseline;
+    justify-content: center;
+    
+}
+
+.contacto img {
+    max-width: 50px;
+    margin: 20px;
+}
+
+.contacto1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.contacto, .p_contacto {
+    color: gray;
+    margin-top: -10px;
+    font-size: 18px;
+}

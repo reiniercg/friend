@@ -1,0 +1,56 @@
+footer {
+    background-color: #333; /* Fondo oscuro y moderno */
+    color: #f9f9f9; /* Texto claro para mejor contraste */
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+footer .container_f {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaciado entre elementos */
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    max-width: 120px; /* Tamaño de logo ajustado */
+    border-radius: 20%; /* Bordes redondeados para estilo moderno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem; /* Espaciado entre enlaces */
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: #fd4c4c; /* Efecto hover con color rojo vibrante */
+}
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem; /* Tamaño de fuente más grande para íconos */
+    color: #f9f9f9;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .social-media a:hover {
+    color: #4caf50; /* Verde para hover en redes sociales */
+}

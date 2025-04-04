@@ -1,0 +1,114 @@
+/* General styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #333, #444); /* Degradado */
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container_header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-logo .logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Toggle Button */
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle:hover .menu-icon {
+    background-color: #555; /* Efecto hover */
+}
+
+.menu-icon {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon::before {
+    transform: translateY(-8px);
+}
+
+.menu-icon::after {
+    transform: translateY(8px);
+}
+
+/* Menu Styles */
+.menu {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #444;
+    color: #ddd; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Mostrar el menú cuando está activo */
+.menu.active {
+    display: flex;
+}
+
+/* Media Query para dispositivos grandes */
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+    }
+    .menu-item a {
+        padding: 0.5rem 1.5rem; /* Aumentar el padding horizontal */
+    }
+    .menu-toggle {
+        display: none; /* Oculta el botón en pantallas grandes */
+    }
+}
