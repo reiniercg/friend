@@ -1,5 +1,5 @@
 footer {
-    background-color: #333; /* Fondo oscuro y moderno */
+    background-color: #575656; /* Fondo oscuro y moderno */
     color: #f9f9f9; /* Texto claro para mejor contraste */
     padding: 2rem;
     text-align: center;
@@ -16,8 +16,8 @@ footer .container_f {
 
 footer img {
     max-width: 120px; /* Tamaño de logo ajustado */
-    border-radius: 20%; /* Bordes redondeados para estilo moderno */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    
+    
 }
 
 footer p {

@@ -198,6 +198,7 @@ h5 {
     justify-content: center;
     align-items: center;
     height: 60vh;
+    margin: 0 auto;
 }
 
 .img_staff {

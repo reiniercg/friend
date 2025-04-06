@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/styles/estilos2.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
     <link rel="stylesheet" href="./assets/styles/p_pequeñas.css">
+    <link rel="stylesheet" href="./assets/styles/reserva.css">
 
 </head>
 <body>
@@ -47,23 +48,21 @@
     <main>
         <section class="inicio" >
             <!-- La animación o efectos se aplicarán solo al fondo de esta sección -->
+            <div class="container_inicio">
+                <div class="texto_inicio">
+                    <p>Restaurante Lounge Bar</p>
+                    <h1>FRIENDS</h1>
+                    <p>Se trata de compartir. Se trata de honestidad.
+                    Se trata de identidad. Los amigos son difíciles de encontrar.</p>
+                </div>
+                <div class="botones_inicio">
+                    <a href="menu.html" class="btn">MENU</a>
+                    <a href="#formulario" class="btn" target="_blank">RESERVA</a>
+                </div>
+            </div>
         </section>
 
-        </section>
-        <div class="container_inicio">
-            <div class="texto_inicio">
-                <p>Restaurante Lounge Bar</p>
-                <h1>FRIENDS</h1>
-                <p>Se trata de compartir. Se trata de honestidad.
-                    Se trata de identidad. Los amigos son difíciles de encontrar.</p>
-                
-            </div>
-            <div class="botones_inicio">
-                <a href=".menu.html" class="btn">MENU</a> <!-- Enlace al menú -->
-                <a href="./assets/pages/reserva.html" class="btn" target="_blank">RESERVA</a> <!-- Enlace al formulario o mensaje de WhatsApp -->
-            </div>
-            
-        </div>
+        
         
 
 
@@ -150,7 +149,7 @@
         </section>
         
     
-
+<!--Galeria-->
     <section class="gallery_padre">
         <h2>Galería</h2>
         <div class="gallery">
@@ -173,6 +172,7 @@
         </div>
     </section>
 
+<!--Conoce el equipo-->
     <div class="contenedor_staff">
         <h2>Conoce al equipo</h2>
         
@@ -181,7 +181,36 @@
         
     </div>
 
+<!--reserva-->
+<section class="s_reserva" id="formulario">
+    <div class="reserva">
+        <h2>Reserva tu Mesa</h2>
+        <form id="reserva-form">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+    
+            <label for="hora">Hora:</label>
+            <select id="hora" name="hora" required>
+                <!-- Las opciones se generarán dinámicamente con JavaScript -->
+            </select>
+    
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+    
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" required>
+    
+            <button type="button" id="enviar-whatsapp" class="btn">Enviar por WhatsApp</button>
+        </form>
+    </div>
+    
+    
+</section>
 
+<!--contacto-->
     <div class="contacto">
         <div class="contacto1">
             <img src="./assets/images/001-reloj-de-pared.png" alt="reloj">
@@ -212,7 +241,7 @@
             <p>&copy; 2025 Reinier's Website. Todos los derechos reservados.</p>
             <ul>
                 <li><a href="/about">Acerca de</a></li>
-                <li><a href="/privacy">Política de Privacidad</a></li>
+                <li><a href="/assets/pages/privacy.html">Política de Privacidad</a></li>
                 <li><a href="/contact">Contacto</a></li>
             </ul>
             <div class="social-media">
