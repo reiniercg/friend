@@ -33,7 +33,7 @@
                                 <a class="nav-link" href="#">Features</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="/admin.html">admin</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -191,6 +191,7 @@
     
             <label for="hora">Hora:</label>
             <select id="hora" name="hora" required>
+                <option value="" disabled selected>Selecciona la hora...</option>
                 <!-- Las opciones se generarán dinámicamente con JavaScript -->
             </select>
     
@@ -209,6 +210,14 @@
     
     
 </section>
+<!--calendario-->
+<section class="calendar">
+    <h2>Calendario de Reservas</h2>
+    <div id="calendar">
+        <!-- El contenido del calendario será generado dinámicamente -->
+    </div>
+</section>
+
 
 <!--contacto-->
     <div class="contacto">
@@ -254,6 +263,7 @@
 
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script_reservas.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

@@ -61,7 +61,7 @@ button:hover {
 
     .reserva {
         width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
-        margin: 0; /* Elimina márgenes externos */
+        margin: 20px; /* Elimina márgenes externos */
         padding: 15px; /* Espaciado más pequeño en el interior */
         box-shadow: none; /* Elimina la sombra para un diseño más plano */
     }
@@ -84,4 +84,46 @@ button:hover {
         padding: 12px; /* Botón más cómodo para pantallas táctiles */
         font-size: 1.1em; /* Tamaño de texto más grande en el botón */
     }
+}
+
+
+
+/*calendario*/
+.calendar {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.reserved {
+    background-color: #ffcccc; /* Color rojo para horas reservadas */
+}
+
+.available {
+    background-color: #ccffcc; /* Color verde para horas disponibles */
 }
