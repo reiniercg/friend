@@ -22,3 +22,24 @@ function closeZoom() {
     const overlay = document.getElementById('zoom-overlay');
     overlay.style.display = 'none'; // Oculta el overlay
 }
+
+
+// JavaScript para mostrar el popup automáticamente
+window.onload = () => {
+    setTimeout(() => {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('popupOverlay').style.display = 'block';
+}, 3000); // 3 segundos
+
+// Cierra el popup al hacer clic en el botón
+document.getElementById('closePopup').addEventListener('click', () => {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('popupOverlay').style.display = 'none';
+});
+
+// Permite cerrar el popup haciendo clic en el fondo oscuro
+document.getElementById('popupOverlay').addEventListener('click', () => {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('popupOverlay').style.display = 'none';
+});
+};

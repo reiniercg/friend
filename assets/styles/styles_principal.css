@@ -196,6 +196,107 @@ header {
     }
 }
 
+/* Estilos básicos para el modal */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Estilos del popup */
+.popup {
+display: flex;
+flex-wrap: wrap;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+z-index: 1000;
+}
+
+.popup button {
+margin-top: 10px;
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.popup button:hover {
+background-color: #0056b3;
+}
+
+
+.llama {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    border: 2px solid;
+    text-decoration: none;
+    color: yellow;
+    background-color: #e74c3c;
+    padding:20px;
+    display: inline-block;
+    cursor: pointer;
+    animation: pulse 1.5s infinite; /* Aplica la animación */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Crece un poco */
+    }
+}
+
+
+
+.llama:hover {
+
+transform: scale(1.1);
+box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media  (max-width: 768px) {
+    .llama {
+        width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
+        font-size: 28px; /* Tamaño de fuente más pequeño */
+        height: auto;
+        border-radius: 35px;
+        padding: 5px;
+        margin: 20px;
+        text-align: center;
+    }
+    .popup img{
+        width: 100%;
+    }
+    .popup p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+}
+
+@keyframes glow {
+0%, 100% {
+    box-shadow: 0 8px 15px rgba(255, 87, 51, 0.5);
+}
+50% {
+    box-shadow: 0 8px 25px rgba(255, 87, 51, 0.7);
+}
+}
+
 
 
 
