@@ -285,6 +285,9 @@ box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
         font-size: 1rem;
         text-align: center;
     }
+    .popup h2{
+        margin: -10px;
+    }
     
 }
 
