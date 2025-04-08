@@ -210,8 +210,8 @@ header {
 
 /* Estilos del popup */
 .popup {
-display: flex;
-flex-wrap: wrap;
+display: none;
+
 position: fixed;
 top: 50%;
 left: 50%;
