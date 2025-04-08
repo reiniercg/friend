@@ -292,8 +292,11 @@ box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media  (max-width: 768px) {
+    .popup{
+        width: 230px;
+    }
     .llama {
-        width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
+        width: 100%; /* Ajusta el tamaño para pantallas pequeñas */
         font-size: 28px; /* Tamaño de fuente más pequeño */
         height: auto;
         border-radius: 35px;
@@ -307,6 +310,7 @@ box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
     .popup p{
         font-size: 1rem;
         text-align: center;
+        
     }
     .popup h2{
         margin: -10px;
