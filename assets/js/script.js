@@ -26,20 +26,29 @@ function closeZoom() {
 
 // JavaScript para mostrar el popup automáticamente
 window.onload = () => {
-    setTimeout(() => {
-    document.getElementById('popup').style.display = 'block';
-    document.getElementById('popupOverlay').style.display = 'block';
-}, 3000); // 3 segundos
+// Mostrar el popup después de 3 segundos
+setTimeout(() => {
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+    popup.style.display = 'block'; // Mostrar el popup
+    overlay.style.display = 'block'; // Mostrar el fondo oscuro
+}, 3000);
 
-// Cierra el popup al hacer clic en el botón
+// Cerrar el popup al hacer clic en el botón de cerrar
 document.getElementById('closePopup').addEventListener('click', () => {
-    document.getElementById('popup').style.display = 'none';
-    document.getElementById('popupOverlay').style.display = 'none';
+    closePopup();
 });
 
-// Permite cerrar el popup haciendo clic en el fondo oscuro
-document.getElementById('popupOverlay').addEventListener('click', () => {
-    document.getElementById('popup').style.display = 'none';
-    document.getElementById('popupOverlay').style.display = 'none';
+// Cerrar el popup al hacer clic en el overlay (para móviles y escritorio)
+document.getElementById('overlay').addEventListener('click', () => {
+    closePopup();
 });
+
+// Función para cerrar el popup y overlay
+function closePopup() {
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+}
 };
