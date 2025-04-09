@@ -52,7 +52,7 @@
     }
     
 
-    .botones_inicio .btn {
+    .botones_inicio .btn  {
         font-size: 1rem;
         margin-top: -20px;
         width: 50%;
@@ -149,6 +149,9 @@
         margin: 5px 0;
         line-height: 1.5;
         color: var(--primary-color);
+    }
+    .btn_rev{
+        margin-top: 20px;
     }
 
     .gallery {

@@ -373,8 +373,8 @@ box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
     justify-content: center; /* Centra los botones horizontalmente */
 }
 
-.btn {
-    width: 250px; /* Ancho fijo para los botones */
+.btn, .btn_rev {
+    width: 150px; /* Ancho fijo para los botones */
     height: 50px; /* Altura fija para uniformar el tamaño */
     font-size: 1rem; /* Ajusta el tamaño de la fuente */
     font-weight: bold; /* Destaca el texto */
@@ -387,7 +387,7 @@ box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
     text-align: center; /* Centra el texto dentro del botón */
 }
 
-.btn:hover {
+.btn, .btn_rev:hover {
     transform: scale(1.05); /* Efecto de ampliación al pasar el mouse */
     box-shadow: 0 4px 10px rgba(231, 76, 60, 0.5); /* Sombra al pasar el mouse */
 }
