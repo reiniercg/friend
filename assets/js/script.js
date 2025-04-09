@@ -22,6 +22,32 @@ function closeZoom() {
     const overlay = document.getElementById('zoom-overlay');
     overlay.style.display = 'none'; // Oculta el overlay
 }
+//para movil
+function zoomImage(img) {
+    const overlay = document.getElementById('zoom-overlay');
+    const zoomedImage = document.getElementById('zoomed-image');
+    
+    zoomedImage.src = img.src; // Copia la fuente de la imagen seleccionada
+
+    // Ajusta el tamaño según el ancho de la pantalla
+    if (window.innerWidth <= 480) { // Para pantallas pequeñas
+        zoomedImage.style.width = '100%'; // Ocupa todo el ancho de la pantalla
+        zoomedImage.style.height = 'auto'; // Mantiene las proporciones
+    } else { // Para pantallas más grandes
+        zoomedImage.style.width = '60%';
+        zoomedImage.style.height = 'auto';
+    }
+    
+    overlay.style.display = 'flex'; // Muestra el overlay con la imagen en zoom
+}
+
+function closeZoom() {
+    const overlay = document.getElementById('zoom-overlay');
+    overlay.style.display = 'none'; // Oculta el overlay
+}
+
+
+
 
 
 // JavaScript para mostrar el popup automáticamente
