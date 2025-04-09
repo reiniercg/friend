@@ -33,14 +33,15 @@
 /* Media Query: Pantallas pequeñas (máx. 480px) */
 @media screen and (max-width: 768px)  {
     .container_inicio {
-        padding: 1.5rem;
+        padding: 2rem 0;
         border-radius: 10px;
         box-shadow: var(--box-shadow);
         text-align: center;
+
     }
 
     .texto_inicio h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
         margin-top: -2rem;
     }
 
@@ -49,12 +50,13 @@
         line-height: 1.4;
         margin-top: -1rem;
     }
+    
 
     .botones_inicio .btn {
         font-size: 1rem;
-        padding: 0.5rem 1rem;
-        width: 100%;
-        margin: 0.5rem 0;
+        margin-top: -20px;
+        width: 50%;
+        
         box-shadow: var(--box-shadow);
     }
 
@@ -63,11 +65,13 @@
         background-size: cover;
         animation: none;
     }
-
+    
     h2 {
         font-size: 2rem;
     }
-
+#carouselExampleAutoplaying{
+    width: 100%;
+}
     .carousel-inner {
         width: 100%;
         height: 80%;
